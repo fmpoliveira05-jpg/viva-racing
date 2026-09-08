@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application -->
+    <string name="app_name">Viva Racing</string>
+    <string name="app_tagline">Follow races together</string>
+
+    <!-- Screens -->
+    <string name="screen_home">Home</string>
+    <string name="screen_races">Races</string>
+    <string name="screen_alerts">Alerts</string>
+    <string name="screen_amateur">Amateur runs</string>
+    <string name="screen_amateur_detail">Run detail</string>
+    <string name="screen_profile">Profile</string>
+    <string name="screen_settings">Settings</string>
+    <string name="screen_sensors">Sensors</string>
+    <string name="screen_about">Help and information</string>
+    <string name="screen_new_race">New race</string>
+    <string name="screen_race_detail">Race detail</string>
+    <string name="screen_alert_detail">Alert detail</string>
+    <string name="screen_new_alert">New alert</string>
+    <string name="screen_tracking">Route recording</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Back</string>
+    <string name="open_menu">Open menu</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_share">Share</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="action_create_account">Create account</string>
+    <string name="action_go_to_register">Do not have an account? Sign up</string>
+    <string name="action_back_to_login">Back to sign in</string>
+    <string name="action_forgot_password">Forgot my password</string>
+    <string name="toggle_password_visibility">Show or hide password</string>
+    <string name="action_grant_permission">Grant permission</string>
+
+    <!-- Authentication -->
+    <string name="title_create_account">Create account</string>
+    <string name="register_subtitle">Join the community and start following races.</string>
+    <string name="field_email">Email</string>
+    <string name="field_password">Password</string>
+    <string name="field_confirm_password">Confirm password</string>
+    <string name="field_username">Username</string>
+    <string name="field_city">City</string>
+    <string name="field_phone">Phone number</string>
+
+    <!-- Errors and messages -->
+    <string name="error_empty_fields">Please fill in all required fields.</string>
+    <string name="error_short_password">The password must have at least %1$d characters.</string>
+    <string name="error_password_mismatch">The passwords do not match.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="info_reset_sent">A password reset email has been sent.</string>
+    <string name="error_name_required">The race name is required.</string>
+    <string name="error_location_required">Choose the start location of the race.</string>
+    <string name="error_no_location">Could not obtain the current location.</string>
+    <string name="error_empty_kml">The KML file does not contain a valid route.</string>
+    <string name="error_race_missing">Race not found.</string>
+    <string name="error_bib_required">Enter the athlete bib number.</string>
+    <string name="message_subscribed">You subscribed to this race.</string>
+    <string name="message_unsubscribed">Subscription removed.</string>
+    <string name="message_alert_published">Alert published.</string>
+    <string name="message_profile_saved">Profile saved.</string>
+    <string name="offline_banner">No connection: showing locally stored data.</string>
+    <string name="pending_sync">Pending upload</string>
+
+    <!-- Home -->
+    <string name="home_welcome_title">Welcome to Viva Racing</string>
+    <string name="home_welcome_body">Register races, follow athletes live and record your own times on the same routes.</string>
+    <string name="home_last_run">Your latest run</string>
+    <string name="section_upcoming_races">Upcoming races</string>
+    <string name="section_recent_activity">Recent activity</string>
+    <string name="label_races">Races</string>
+    <string name="label_subscriptions">Subscribed</string>
+    <string name="label_my_runs">My runs</string>
+
+    <!-- Races -->
+    <string name="action_new_race">New race</string>
+    <string name="action_search_races">Search races</string>
+    <string name="filter_subscribed">Subscribed</string>
+    <string name="race_type_running">Running</string>
+    <string name="race_type_marathon">Marathon</string>
+    <string name="race_type_trail">Trail</string>
+    <string name="race_type_cycling">Cycling</string>
+    <string name="race_type_other">Other</string>
+    <string name="race_status_scheduled">Scheduled</string>
+    <string name="race_status_ongoing">Ongoing</string>
+    <string name="race_status_finished">Finished</string>
+    <string name="unknown_location">Unknown location</string>
+    <string name="unknown_author">Unknown user</string>
+    <string name="empty_races_title">No races yet</string>
+    <string name="empty_races_description">Be the first to register a race for the community.</string>
+    <string name="empty_map_title">Nothing to show on the map</string>
+    <string name="empty_map_description">Records without coordinates are not displayed here.</string>
+    <string name="map_hint_races">%1$d races with a marked start point.</string>
+    <string name="map_hint_alerts">%1$d alerts located on the map.</string>
+    <string name="map_hint_runs">%1$d amateur runs on the map.</string>
+    <string name="screen_map">Map</string>
+    <string name="map_layer_races">Races</string>
+    <string name="map_layer_alerts">Alerts</string>
+    <string name="map_layer_runs">Amateur runs</string>
+    <string name="map_layers_empty_title">No layer selected</string>
+    <string name="map_layers_empty_description">Turn on at least one layer to see records on the map.</string>
+
+    <!-- Race form -->
+    <string name="field_race_name">Race name</string>
+    <string name="field_description">Description</string>
+    <string name="field_race_type">Type</string>
+    <string name="field_race_status">Status</string>
+    <string name="field_organizer_phone">Organiser phone</string>
+    <string name="field_search_place">Search for a place</string>
+    <string name="section_start_location">Start location</string>
+    <string name="section_route">Route</string>
+    <string name="action_use_this_place">Use this place</string>
+    <string name="action_use_current_location">Use my current location</string>
+    <string name="hint_tap_map">Tap the map to mark the start point.</string>
+    <string name="action_record_route">Record live</string>
+    <string name="action_import_kml">Import KML</string>
+    <string name="action_clear_route">Remove route</string>
+    <string name="route_summary">Route with %1$d points, %2$s.</string>
+    <string name="action_add_photo">Add photo</string>
+    <string name="action_save_race">Save race</string>
+    <string name="marker_start">Start</string>
+    <string name="marker_finish">Finish</string>
+    <string name="marker_observer">Your position</string>
+    <string name="weather_title">Weather in %1$s</string>
+    <string name="weather_details">%1$s, %2$.1f °C, humidity %3$d%%, wind %4$.0f km/h</string>
+
+    <!-- Race detail -->
+    <string name="label_distance">Distance</string>
+    <string name="label_start">Start</string>
+    <string name="label_alerts">Alerts</string>
+    <string name="label_time">Time</string>
+    <string name="label_date">Date</string>
+    <string name="label_bib">Bib</string>
+    <string name="label_pace">Pace</string>
+    <string name="label_average_speed">Avg. speed</string>
+    <string name="label_steps">Steps</string>
+    <string name="label_points">Points</string>
+    <string name="label_total_distance">Total distance</string>
+    <string name="label_total_time">Total time</string>
+    <string name="label_published_by">Published by %1$s</string>
+    <string name="action_subscribe">Subscribe</string>
+    <string name="action_unsubscribe">Unsubscribe</string>
+    <string name="action_run_amateur">Run it</string>
+    <string name="action_publish_alert">Publish alert</string>
+    <string name="hint_not_near_route">You need to be near the route to publish alerts about athletes.</string>
+    <string name="section_android_actions">Contact and sharing</string>
+    <string name="action_call">Call</string>
+    <string name="action_invite_contact">Invite a contact</string>
+    <string name="action_open_external_maps">Open in maps app</string>
+    <string name="action_delete_race">Delete race</string>
+    <string name="section_alerts">Alerts</string>
+    <string name="section_leaderboard">Amateur leaderboard</string>
+    <string name="invite_message">Join me at %1$s, starting on %2$s. Follow it on Viva Racing!</string>
+    <string name="action_open_race">Open race</string>
+
+    <!-- Alerts -->
+    <string name="alert_type_start">Race start</string>
+    <string name="alert_type_passing">Athlete passing</string>
+    <string name="alert_type_finish">Race finish</string>
+    <string name="alert_type_incident">Incident</string>
+    <string name="bib_short">bib</string>
+    <string name="field_alert_type">Alert type</string>
+    <string name="field_bib_number">Bib number</string>
+    <string name="field_alert_message">Message</string>
+    <string name="hint_waiting_location">Waiting for the device location…</string>
+    <string name="action_refresh_location">Refresh location</string>
+    <string name="action_take_photo">Camera</string>
+    <string name="action_gallery">Gallery</string>
+    <string name="action_switch_camera">Switch camera</string>
+    <string name="empty_alerts_title">No alerts yet</string>
+    <string name="empty_alerts_description">Alerts published during the race will appear here.</string>
+
+    <!-- Amateur runs -->
+    <string name="empty_runs_title">No amateur runs yet</string>
+    <string name="empty_runs_description">Run one of the registered routes and your time shows up here.</string>
+    <string name="anonymous_athlete">Anonymous athlete</string>
+
+    <!-- Tracking -->
+    <string name="tracking_title_official">Recording the official route</string>
+    <string name="tracking_title_amateur">Amateur run: %1$s</string>
+    <string name="tracking_new_route">New route</string>
+    <string name="tracking_waiting_gps">Waiting for the first GPS fix…</string>
+    <string name="action_start_tracking">Start</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_discard">Discard recording</string>
+    <string name="permission_location_rationale">Viva Racing needs access to your location to record routes and to place alerts on the map.</string>
+
+    <!-- Profile -->
+    <string name="section_my_races">Races I created</string>
+    <string name="section_my_runs">My runs</string>
+    <string name="empty_my_races">You have not created any race yet.</string>
+    <string name="action_save_profile">Save profile</string>
+
+    <!-- Settings -->
+    <string name="section_appearance">Appearance</string>
+    <string name="section_privacy">Privacy</string>
+    <string name="section_notifications">Notifications</string>
+    <string name="section_energy">Energy and accuracy</string>
+    <string name="setting_language">Language</string>
+    <string name="language_system">System language</string>
+    <string name="language_portuguese">Portuguese</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="setting_theme">Theme</string>
+    <string name="theme_system">Follow the system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_auto_sensor">Automatic (light sensor)</string>
+    <string name="setting_anonymous_title">Publish results anonymously</string>
+    <string name="setting_anonymous_description">Your amateur times are shown without your username.</string>
+    <string name="setting_notifications_title">Community notifications</string>
+    <string name="setting_notifications_description">Receive alerts about athletes and new public activity.</string>
+    <string name="setting_only_subscribed_title">Only subscribed races</string>
+    <string name="setting_only_subscribed_description">Limit notifications to the races you follow.</string>
+    <string name="setting_high_accuracy_title">High accuracy recording</string>
+    <string name="setting_high_accuracy_description">Uses GPS for greater precision, at the cost of more battery.</string>
+    <string name="setting_power_saving_title">Power saving mode</string>
+    <string name="setting_power_saving_active">Active: location updates are less frequent.</string>
+    <string name="setting_power_saving_inactive">Inactive: the battery level is fine.</string>
+
+    <!-- Sensors -->
+    <string name="sensors_intro">Readings collected by the bound sensor service and how the application uses them.</string>
+    <string name="sensor_light">Ambient light</string>
+    <string name="sensor_light_usage">Enables the dark theme automatically in low light conditions.</string>
+    <string name="sensor_acceleration">Acceleration</string>
+    <string name="sensor_acceleration_usage">Detects whether the device is moving while recording a route.</string>
+    <string name="sensor_proximity">Proximity</string>
+    <string name="sensor_steps">Step counter</string>
+    <string name="sensor_steps_usage">Counts the steps taken during an amateur run.</string>
+    <string name="sensor_available">Available</string>
+    <string name="sensor_unavailable">Not available</string>
+    <string name="sensor_moving">Moving</string>
+    <string name="sensor_still">Still</string>
+    <string name="sensor_light_theme_title">Low light detected</string>
+    <string name="sensor_low_light_yes">Yes: the automatic theme switches to dark.</string>
+    <string name="sensor_low_light_no">No: the automatic theme stays light.</string>
+
+    <!-- About -->
+    <string name="about_header">How Viva Racing works</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_tracking">Route recording</string>
+    <string name="notification_channel_tracking_description">Permanent notification shown while a route is being recorded.</string>
+    <string name="notification_channel_alerts">Community alerts</string>
+    <string name="notification_channel_alerts_description">Alerts about athletes and new public activity.</string>
+    <string name="tracking_notification_title">Viva Racing is recording</string>
+    <string name="tracking_notification_content">Recording: %1$s</string>
+    <string name="tracking_notification_progress">%1$s in %2$s</string>
+    <string name="notification_generic_title">Viva Racing</string>
+    <string name="notification_open_details">Tap to see the details.</string>
+    <string name="notification_race_started">%1$s has started</string>
+    <string name="notification_race_finished">%1$s has finished</string>
+    <string name="notification_incident">Incident reported at %1$s</string>
+    <string name="notification_athlete_passing">Athlete %1$s spotted at %2$s</string>
+    <string name="notification_new_amateur_run">%1$s posted a new run</string>
+    <string name="notification_new_amateur_run_body">New amateur time on %1$s.</string>
+
+    <!-- Componente social, modo convidado, visibilidade e estado do sistema -->
+    <string name="screen_friends">Friends</string>
+    <string name="screen_athletes">Athletes</string>
+    <string name="screen_athlete_detail">Athlete</string>
+    <string name="screen_system">System and sensors</string>
+    <string name="tab_friends">Friends</string>
+    <string name="tab_requests">Received</string>
+    <string name="tab_sent">Sent</string>
+    <string name="tab_search">Find people</string>
+    <string name="action_accept">Accept</string>
+    <string name="action_decline">Decline</string>
+    <string name="action_remove_friend">Remove friend</string>
+    <string name="action_send_friend_request">Send friend request</string>
+    <string name="action_follow_athlete">Follow as athlete</string>
+    <string name="action_unfollow_athlete">Stop following</string>
+    <string name="action_view_athlete_alerts">View athlete alerts</string>
+    <string name="field_search_users">Search by name or city</string>
+    <string name="friends_capacity">%1$d of %2$d friends</string>
+    <string name="requests_capacity">%1$d of %2$d pending requests</string>
+    <string name="athlete_alert_count">%1$d alerts recorded</string>
+    <string name="section_athlete_alerts">Alerts about these athletes</string>
+    <string name="empty_friends_title">No friends yet</string>
+    <string name="empty_friends_description">Use the search tab to find other users and send a friend request.</string>
+    <string name="empty_requests_title">No pending requests</string>
+    <string name="empty_requests_description">Friend requests you receive appear here, ready to accept or decline.</string>
+    <string name="empty_sent_title">No requests sent</string>
+    <string name="empty_sent_description">Requests waiting for an answer appear here and can be cancelled.</string>
+    <string name="empty_search_title">No users found</string>
+    <string name="empty_search_description">Type at least part of a username or city. Only registered users appear.</string>
+    <string name="empty_athletes_title">No athletes found</string>
+    <string name="empty_athletes_description">Athletes are registered users of the application. Search by name or city to follow someone.</string>
+    <string name="field_search_athletes">Search athletes by name or city</string>
+    <string name="athletes_capacity">Following %1$d of %2$d athletes</string>
+    <string name="athlete_passage_count">%1$d passages recorded</string>
+    <string name="athlete_following">Following</string>
+    <string name="athlete_bib">Bib number %1$s</string>
+    <string name="section_athlete_passages">Passage history</string>
+    <string name="athlete_history_locked_title">Passage history is private</string>
+    <string name="athlete_history_locked_description">Follow this athlete, or subscribe to a race they are also following, to see where they have been spotted.</string>
+    <string name="setting_system_status_description">Sensor readings, battery, temperature and the data collection profile in use.</string>
+    <string name="empty_athlete_alerts_description">No position has been reported for this athlete yet.</string>
+    <string name="social_success">Done.</string>
+    <string name="social_already_friends">You are already friends with this user.</string>
+    <string name="social_request_sent">A request has already been sent to this user.</string>
+    <string name="social_friend_limit">The friend limit has been reached.</string>
+    <string name="social_request_limit">This user has too many pending requests.</string>
+    <string name="social_athlete_limit">The limit of followed athletes has been reached.</string>
+    <string name="social_guest">Create an account to use this feature.</string>
+    <string name="action_continue_as_guest">Continue as a guest</string>
+    <string name="action_exit_guest">Leave guest mode</string>
+    <string name="guest_user">Guest</string>
+    <string name="guest_hint">As a guest you can browse public races, but not create or subscribe to anything.</string>
+    <string name="guest_banner">Guest mode: read-only access to public races.</string>
+    <string name="guest_notice_title">Feature reserved for registered users</string>
+    <string name="guest_notice_body">Create an account to register races, publish alerts, subscribe to races and athletes, and add friends.</string>
+    <string name="field_visibility">Visibility</string>
+    <string name="visibility_public">Public</string>
+    <string name="visibility_friends">Friends only</string>
+    <string name="visibility_private">Private</string>
+    <string name="visibility_public_description">Visible to every user of the application, including guests.</string>
+    <string name="visibility_friends_description">Visible only to you and to the users you have as friends.</string>
+    <string name="visibility_private_description">Visible only to you. Alerts and amateur runs inherit this restriction.</string>
+    <string name="field_athlete">Athlete being reported</string>
+    <string name="field_athlete_hint">Linking the athlete lets the application notify whoever follows that person.</string>
+    <string name="athlete_not_linked">Not linked</string>
+    <string name="setting_only_friends_title">Only friends</string>
+    <string name="setting_only_friends_description">Restrict every community notification to activity published by your friends.</string>
+    <string name="setting_friend_activity_title">Friend activity</string>
+    <string name="setting_friend_activity_description">Be notified when a friend registers a race or publishes a new run.</string>
+    <string name="setting_athlete_positions_title">Athlete positions</string>
+    <string name="setting_athlete_positions_description">Be notified when an athlete you follow is spotted along a route.</string>
+    <string name="notification_friend_race">%1$s registered a new race</string>
+    <string name="notification_friend_race_body">Open the details of %1$s.</string>
+    <string name="section_system_state">Device state</string>
+    <string name="section_sensors">Sensors</string>
+    <string name="system_state_intro">Conditions the application watches to adapt how it collects data.</string>
+    <string name="system_battery">Battery</string>
+    <string name="system_thermal">Thermal</string>
+    <string name="system_profile">Profile</string>
+    <string name="system_profile_high">High</string>
+    <string name="system_profile_balanced">Balanced</string>
+    <string name="system_profile_low">Minimum</string>
+    <string name="system_thermal_none">Normal</string>
+    <string name="system_thermal_light">Light</string>
+    <string name="system_thermal_moderate">Moderate</string>
+    <string name="system_thermal_severe">Severe</string>
+    <string name="system_thermal_critical">Critical</string>
+    <string name="system_yes">Yes</string>
+    <string name="system_no">No</string>
+    <string name="system_charging">Charging</string>
+    <string name="system_charging_usage">While charging, maximum accuracy is kept even on a low battery.</string>
+    <string name="system_power_save">Power saving</string>
+    <string name="system_power_save_usage">Widens the location interval and drops high accuracy GPS.</string>
+    <string name="system_metered">Metered network</string>
+    <string name="system_metered_usage">Photo uploads are deferred on a metered connection with a low battery.</string>
+    <string name="system_data_saver">Data Saver</string>
+    <string name="system_data_saver_usage">With Data Saver on, heavy transfers wait for an unrestricted network.</string>
+    <string name="system_background_restricted">Background restricted</string>
+    <string name="system_background_restricted_usage">If restricted, notifications may not arrive while the application is closed.</string>
+    <string name="system_battery_optimizations">Battery optimisations</string>
+    <string name="system_battery_optimizations_usage">Android may delay periodic checks while optimisations are applied.</string>
+</resources>

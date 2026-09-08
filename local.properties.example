@@ -1,0 +1,17 @@
+# Ficheiro de exemplo. Copiar para local.properties e preencher com as chaves
+# proprias. O ficheiro local.properties nao e versionado, por isso nenhuma
+# chave chega ao repositorio.
+
+# Caminho do SDK do Android instalado na maquina.
+sdk.dir=C\:\\Users\\<utilizador>\\AppData\\Local\\Android\\Sdk
+
+# Chave do Google Maps SDK for Android, injetada no AndroidManifest.
+MAPS_API_KEY=<chave do Google Maps SDK for Android>
+
+# Chave da OpenWeatherMap, usada nas condicoes atuais e na previsao a 5 dias.
+WEATHER_API_KEY=<chave da OpenWeatherMap>
+
+# Supabase Storage, usado para guardar as fotografias das provas e dos alertas.
+SUPABASE_URL=https://<id-do-projeto>.supabase.co
+SUPABASE_ANON_KEY=<anon key do Supabase>
+SUPABASE_BUCKET=viva-racing

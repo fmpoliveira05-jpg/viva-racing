@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="viva_racing_photos" path="photos/" />
+    <files-path name="viva_racing_files" path="." />
+    <external-files-path name="viva_racing_external" path="." />
+</paths>

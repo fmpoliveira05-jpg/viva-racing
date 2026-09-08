@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aplicacao -->
+    <string name="app_name">Viva Racing</string>
+    <string name="app_tagline">Acompanhe as provas em comunidade</string>
+
+    <!-- Ecrãs -->
+    <string name="screen_home">Início</string>
+    <string name="screen_races">Provas</string>
+    <string name="screen_alerts">Alertas</string>
+    <string name="screen_amateur">Participações amadoras</string>
+    <string name="screen_amateur_detail">Detalhe da participação</string>
+    <string name="screen_profile">Perfil</string>
+    <string name="screen_settings">Definições</string>
+    <string name="screen_sensors">Sensores</string>
+    <string name="screen_about">Ajuda e informação</string>
+    <string name="screen_new_race">Nova prova</string>
+    <string name="screen_race_detail">Detalhe da prova</string>
+    <string name="screen_alert_detail">Detalhe do alerta</string>
+    <string name="screen_new_alert">Novo alerta</string>
+    <string name="screen_tracking">Gravação de percurso</string>
+
+    <!-- Ações comuns -->
+    <string name="action_back">Retroceder</string>
+    <string name="open_menu">Abrir menu</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_share">Partilhar</string>
+    <string name="action_sign_in">Iniciar sessão</string>
+    <string name="action_sign_out">Terminar sessão</string>
+    <string name="action_create_account">Criar conta</string>
+    <string name="action_go_to_register">Ainda não tem conta? Registe-se</string>
+    <string name="action_back_to_login">Voltar ao início de sessão</string>
+    <string name="action_forgot_password">Esqueci-me da palavra-passe</string>
+    <string name="toggle_password_visibility">Mostrar ou ocultar a palavra-passe</string>
+    <string name="action_grant_permission">Conceder permissão</string>
+
+    <!-- Autenticação -->
+    <string name="title_create_account">Criar conta</string>
+    <string name="register_subtitle">Junte-se à comunidade e comece a acompanhar provas.</string>
+    <string name="field_email">Correio eletrónico</string>
+    <string name="field_password">Palavra-passe</string>
+    <string name="field_confirm_password">Confirmar palavra-passe</string>
+    <string name="field_username">Nome de utilizador</string>
+    <string name="field_city">Localidade</string>
+    <string name="field_phone">Telemóvel</string>
+
+    <!-- Erros e mensagens -->
+    <string name="error_empty_fields">Preencha todos os campos obrigatórios.</string>
+    <string name="error_short_password">A palavra-passe deve ter pelo menos %1$d caracteres.</string>
+    <string name="error_password_mismatch">As palavras-passe não coincidem.</string>
+    <string name="error_generic">Ocorreu um erro. Tente novamente.</string>
+    <string name="info_reset_sent">Foi enviada uma mensagem para redefinir a palavra-passe.</string>
+    <string name="error_name_required">O nome da prova é obrigatório.</string>
+    <string name="error_location_required">Escolha o local de partida da prova.</string>
+    <string name="error_no_location">Não foi possível obter a localização atual.</string>
+    <string name="error_empty_kml">O ficheiro KML não contém um percurso válido.</string>
+    <string name="error_race_missing">Prova não encontrada.</string>
+    <string name="error_bib_required">Indique o número de dorsal do atleta.</string>
+    <string name="message_subscribed">Subscreveu esta prova.</string>
+    <string name="message_unsubscribed">Subscrição removida.</string>
+    <string name="message_alert_published">Alerta publicado.</string>
+    <string name="message_profile_saved">Perfil guardado.</string>
+    <string name="offline_banner">Sem ligação: a mostrar os dados guardados localmente.</string>
+    <string name="pending_sync">Por sincronizar</string>
+
+    <!-- Início -->
+    <string name="home_welcome_title">Bem-vindo à Viva Racing</string>
+    <string name="home_welcome_body">Registe provas, acompanhe atletas ao vivo e cronometre os seus próprios tempos nos mesmos percursos.</string>
+    <string name="home_last_run">A sua última participação</string>
+    <string name="section_upcoming_races">Próximas provas</string>
+    <string name="section_recent_activity">Atividade recente</string>
+    <string name="label_races">Provas</string>
+    <string name="label_subscriptions">Subscritas</string>
+    <string name="label_my_runs">Participações</string>
+
+    <!-- Provas -->
+    <string name="action_new_race">Nova prova</string>
+    <string name="action_search_races">Pesquisar provas</string>
+    <string name="filter_subscribed">Subscritas</string>
+    <string name="race_type_running">Corrida</string>
+    <string name="race_type_marathon">Maratona</string>
+    <string name="race_type_trail">Trail</string>
+    <string name="race_type_cycling">Ciclismo</string>
+    <string name="race_type_other">Outro</string>
+    <string name="race_status_scheduled">Agendada</string>
+    <string name="race_status_ongoing">A decorrer</string>
+    <string name="race_status_finished">Terminada</string>
+    <string name="unknown_location">Local desconhecido</string>
+    <string name="unknown_author">Utilizador desconhecido</string>
+    <string name="empty_races_title">Ainda não há provas</string>
+    <string name="empty_races_description">Seja o primeiro a registar uma prova para a comunidade.</string>
+    <string name="empty_map_title">Nada para mostrar no mapa</string>
+    <string name="empty_map_description">Os registos sem coordenadas não são apresentados aqui.</string>
+    <string name="map_hint_races">%1$d provas com ponto de partida marcado.</string>
+    <string name="map_hint_alerts">%1$d alertas localizados no mapa.</string>
+    <string name="map_hint_runs">%1$d participações amadoras no mapa.</string>
+    <string name="screen_map">Mapa</string>
+    <string name="map_layer_races">Provas</string>
+    <string name="map_layer_alerts">Alertas</string>
+    <string name="map_layer_runs">Participações amadoras</string>
+    <string name="map_layers_empty_title">Nenhuma camada selecionada</string>
+    <string name="map_layers_empty_description">Ative pelo menos uma camada para ver registos no mapa.</string>
+
+    <!-- Formulário de prova -->
+    <string name="field_race_name">Nome da prova</string>
+    <string name="field_description">Descrição</string>
+    <string name="field_race_type">Tipo</string>
+    <string name="field_race_status">Estado</string>
+    <string name="field_organizer_phone">Telefone da organização</string>
+    <string name="field_search_place">Pesquisar um local</string>
+    <string name="section_start_location">Local de partida</string>
+    <string name="section_route">Percurso</string>
+    <string name="action_use_this_place">Usar este local</string>
+    <string name="action_use_current_location">Usar a minha localização</string>
+    <string name="hint_tap_map">Toque no mapa para marcar o ponto de partida.</string>
+    <string name="action_record_route">Gravar ao vivo</string>
+    <string name="action_import_kml">Importar KML</string>
+    <string name="action_clear_route">Remover percurso</string>
+    <string name="route_summary">Percurso com %1$d pontos, %2$s.</string>
+    <string name="action_add_photo">Adicionar fotografia</string>
+    <string name="action_save_race">Guardar prova</string>
+    <string name="marker_start">Partida</string>
+    <string name="marker_finish">Chegada</string>
+    <string name="marker_observer">A sua posição</string>
+    <string name="weather_title">Meteorologia em %1$s</string>
+    <string name="weather_details">%1$s, %2$.1f °C, humidade %3$d%%, vento %4$.0f km/h</string>
+
+    <!-- Detalhe da prova -->
+    <string name="label_distance">Distância</string>
+    <string name="label_start">Partida</string>
+    <string name="label_alerts">Alertas</string>
+    <string name="label_time">Tempo</string>
+    <string name="label_date">Data</string>
+    <string name="label_bib">Dorsal</string>
+    <string name="label_pace">Ritmo</string>
+    <string name="label_average_speed">Vel. média</string>
+    <string name="label_steps">Passos</string>
+    <string name="label_points">Pontos</string>
+    <string name="label_total_distance">Distância total</string>
+    <string name="label_total_time">Tempo total</string>
+    <string name="label_published_by">Publicado por %1$s</string>
+    <string name="action_subscribe">Subscrever</string>
+    <string name="action_unsubscribe">Anular subscrição</string>
+    <string name="action_run_amateur">Correr o percurso</string>
+    <string name="action_publish_alert">Publicar alerta</string>
+    <string name="hint_not_near_route">Tem de estar junto ao percurso para publicar alertas sobre atletas.</string>
+    <string name="section_android_actions">Contacto e partilha</string>
+    <string name="action_call">Ligar</string>
+    <string name="action_invite_contact">Convidar um contacto</string>
+    <string name="action_open_external_maps">Abrir na aplicação de mapas</string>
+    <string name="action_delete_race">Eliminar prova</string>
+    <string name="section_alerts">Alertas</string>
+    <string name="section_leaderboard">Classificação amadora</string>
+    <string name="invite_message">Acompanha comigo a prova %1$s, com partida a %2$s. Segue na Viva Racing!</string>
+    <string name="action_open_race">Abrir prova</string>
+
+    <!-- Alertas -->
+    <string name="alert_type_start">Início de prova</string>
+    <string name="alert_type_passing">Passagem de atleta</string>
+    <string name="alert_type_finish">Fim de prova</string>
+    <string name="alert_type_incident">Incidente</string>
+    <string name="bib_short">dorsal</string>
+    <string name="field_alert_type">Tipo de alerta</string>
+    <string name="field_bib_number">Número de dorsal</string>
+    <string name="field_alert_message">Mensagem</string>
+    <string name="hint_waiting_location">A aguardar a localização do dispositivo…</string>
+    <string name="action_refresh_location">Atualizar localização</string>
+    <string name="action_take_photo">Câmara</string>
+    <string name="action_gallery">Galeria</string>
+    <string name="action_switch_camera">Trocar de câmara</string>
+    <string name="empty_alerts_title">Ainda não há alertas</string>
+    <string name="empty_alerts_description">Os alertas publicados durante a prova aparecem aqui.</string>
+
+    <!-- Participações amadoras -->
+    <string name="empty_runs_title">Ainda não há participações</string>
+    <string name="empty_runs_description">Percorra um dos trajetos registados e o seu tempo aparece aqui.</string>
+    <string name="anonymous_athlete">Atleta anónimo</string>
+
+    <!-- Gravação de percurso -->
+    <string name="tracking_title_official">Gravação do percurso oficial</string>
+    <string name="tracking_title_amateur">Participação amadora: %1$s</string>
+    <string name="tracking_new_route">Novo percurso</string>
+    <string name="tracking_waiting_gps">A aguardar a primeira posição do GPS…</string>
+    <string name="action_start_tracking">Iniciar</string>
+    <string name="action_pause">Pausar</string>
+    <string name="action_resume">Retomar</string>
+    <string name="action_finish">Terminar</string>
+    <string name="action_discard">Descartar gravação</string>
+    <string name="permission_location_rationale">A Viva Racing precisa de aceder à sua localização para gravar percursos e assinalar alertas no mapa.</string>
+
+    <!-- Perfil -->
+    <string name="section_my_races">Provas que criei</string>
+    <string name="section_my_runs">As minhas participações</string>
+    <string name="empty_my_races">Ainda não criou nenhuma prova.</string>
+    <string name="action_save_profile">Guardar perfil</string>
+
+    <!-- Definições -->
+    <string name="section_appearance">Aspeto</string>
+    <string name="section_privacy">Privacidade</string>
+    <string name="section_notifications">Notificações</string>
+    <string name="section_energy">Energia e precisão</string>
+    <string name="setting_language">Idioma</string>
+    <string name="language_system">Idioma do sistema</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_english">Inglês</string>
+    <string name="language_spanish">Espanhol</string>
+    <string name="setting_theme">Tema</string>
+    <string name="theme_system">Seguir o sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="theme_auto_sensor">Automático (sensor de luz)</string>
+    <string name="setting_anonymous_title">Publicar resultados de forma anónima</string>
+    <string name="setting_anonymous_description">Os seus tempos amadores são mostrados sem o nome de utilizador.</string>
+    <string name="setting_notifications_title">Notificações da comunidade</string>
+    <string name="setting_notifications_description">Receber alertas sobre atletas e nova atividade pública.</string>
+    <string name="setting_only_subscribed_title">Apenas provas subscritas</string>
+    <string name="setting_only_subscribed_description">Limitar as notificações às provas que acompanha.</string>
+    <string name="setting_high_accuracy_title">Gravação de alta precisão</string>
+    <string name="setting_high_accuracy_description">Utiliza o GPS para maior rigor, com maior consumo de bateria.</string>
+    <string name="setting_power_saving_title">Modo de poupança de energia</string>
+    <string name="setting_power_saving_active">Ativo: as atualizações de localização são menos frequentes.</string>
+    <string name="setting_power_saving_inactive">Inativo: o nível de bateria está adequado.</string>
+
+    <!-- Sensores -->
+    <string name="sensors_intro">Leituras recolhidas pelo serviço ligado de sensores e a forma como a aplicação as utiliza.</string>
+    <string name="sensor_light">Luminosidade ambiente</string>
+    <string name="sensor_light_usage">Ativa automaticamente o tema escuro em condições de pouca luz.</string>
+    <string name="sensor_acceleration">Aceleração</string>
+    <string name="sensor_acceleration_usage">Deteta se o dispositivo está em movimento durante a gravação.</string>
+    <string name="sensor_proximity">Proximidade</string>
+    <string name="sensor_steps">Contador de passos</string>
+    <string name="sensor_steps_usage">Conta os passos dados durante uma participação amadora.</string>
+    <string name="sensor_available">Disponível</string>
+    <string name="sensor_unavailable">Indisponível</string>
+    <string name="sensor_moving">Em movimento</string>
+    <string name="sensor_still">Parado</string>
+    <string name="sensor_light_theme_title">Pouca luz detetada</string>
+    <string name="sensor_low_light_yes">Sim: o tema automático passa a escuro.</string>
+    <string name="sensor_low_light_no">Não: o tema automático mantém-se claro.</string>
+
+    <!-- Sobre -->
+    <string name="about_header">Como funciona a Viva Racing</string>
+
+    <!-- Notificações -->
+    <string name="notification_channel_tracking">Gravação de percurso</string>
+    <string name="notification_channel_tracking_description">Notificação permanente apresentada durante a gravação de um percurso.</string>
+    <string name="notification_channel_alerts">Alertas da comunidade</string>
+    <string name="notification_channel_alerts_description">Alertas sobre atletas e nova atividade pública.</string>
+    <string name="tracking_notification_title">A Viva Racing está a gravar</string>
+    <string name="tracking_notification_content">A gravar: %1$s</string>
+    <string name="tracking_notification_progress">%1$s em %2$s</string>
+    <string name="notification_generic_title">Viva Racing</string>
+    <string name="notification_open_details">Toque para ver os detalhes.</string>
+    <string name="notification_race_started">A prova %1$s começou</string>
+    <string name="notification_race_finished">A prova %1$s terminou</string>
+    <string name="notification_incident">Incidente reportado em %1$s</string>
+    <string name="notification_athlete_passing">Atleta %1$s avistado em %2$s</string>
+    <string name="notification_new_amateur_run">%1$s registou uma nova participação</string>
+    <string name="notification_new_amateur_run_body">Novo tempo amador na prova %1$s.</string>
+
+    <!-- Componente social, modo convidado, visibilidade e estado do sistema -->
+    <string name="screen_friends">Amigos</string>
+    <string name="screen_athletes">Atletas</string>
+    <string name="screen_athlete_detail">Atleta</string>
+    <string name="screen_system">Sistema e sensores</string>
+    <string name="tab_friends">Amigos</string>
+    <string name="tab_requests">Recebidos</string>
+    <string name="tab_sent">Enviados</string>
+    <string name="tab_search">Procurar</string>
+    <string name="action_accept">Aceitar</string>
+    <string name="action_decline">Recusar</string>
+    <string name="action_remove_friend">Remover amigo</string>
+    <string name="action_send_friend_request">Enviar pedido de amizade</string>
+    <string name="action_follow_athlete">Seguir como atleta</string>
+    <string name="action_unfollow_athlete">Deixar de seguir</string>
+    <string name="action_view_athlete_alerts">Ver alertas do atleta</string>
+    <string name="field_search_users">Pesquisar por nome ou localidade</string>
+    <string name="friends_capacity">%1$d de %2$d amigos</string>
+    <string name="requests_capacity">%1$d de %2$d pedidos pendentes</string>
+    <string name="athlete_alert_count">%1$d alertas registados</string>
+    <string name="section_athlete_alerts">Alertas sobre estes atletas</string>
+    <string name="empty_friends_title">Ainda não tem amigos</string>
+    <string name="empty_friends_description">Use o separador de pesquisa para encontrar outros utilizadores e enviar um pedido de amizade.</string>
+    <string name="empty_requests_title">Sem pedidos pendentes</string>
+    <string name="empty_requests_description">Os pedidos de amizade que receber aparecem aqui, prontos a aceitar ou recusar.</string>
+    <string name="empty_sent_title">Nenhum pedido enviado</string>
+    <string name="empty_sent_description">Os pedidos à espera de resposta aparecem aqui e podem ser cancelados.</string>
+    <string name="empty_search_title">Nenhum utilizador encontrado</string>
+    <string name="empty_search_description">Escreva parte do nome de utilizador ou da localidade. Só aparecem utilizadores registados.</string>
+    <string name="empty_athletes_title">Nenhum atleta encontrado</string>
+    <string name="empty_athletes_description">Os atletas são utilizadores registados da aplicação. Pesquise por nome ou localidade para seguir alguém.</string>
+    <string name="field_search_athletes">Pesquisar atletas por nome ou localidade</string>
+    <string name="athletes_capacity">A seguir %1$d de %2$d atletas</string>
+    <string name="athlete_passage_count">%1$d passagens registadas</string>
+    <string name="athlete_following">A seguir</string>
+    <string name="athlete_bib">Dorsal %1$s</string>
+    <string name="section_athlete_passages">Histórico de passagens</string>
+    <string name="athlete_history_locked_title">Histórico de passagens reservado</string>
+    <string name="athlete_history_locked_description">Siga este atleta, ou subscreva uma prova que ele também acompanhe, para consultar onde foi avistado.</string>
+    <string name="setting_system_status_description">Leituras dos sensores, bateria, temperatura e perfil de recolha em utilização.</string>
+    <string name="empty_athlete_alerts_description">Ainda não foi reportada nenhuma posição deste atleta.</string>
+    <string name="social_success">Operação concluída.</string>
+    <string name="social_already_friends">Já é amigo deste utilizador.</string>
+    <string name="social_request_sent">Já foi enviado um pedido a este utilizador.</string>
+    <string name="social_friend_limit">Foi atingido o limite de amigos.</string>
+    <string name="social_request_limit">Este utilizador tem demasiados pedidos pendentes.</string>
+    <string name="social_athlete_limit">Foi atingido o limite de atletas seguidos.</string>
+    <string name="social_guest">Crie uma conta para usar esta funcionalidade.</string>
+    <string name="action_continue_as_guest">Continuar como convidado</string>
+    <string name="action_exit_guest">Sair do modo convidado</string>
+    <string name="guest_user">Convidado</string>
+    <string name="guest_hint">Como convidado pode consultar as provas públicas, mas não criar nem subscrever nada.</string>
+    <string name="guest_banner">Modo convidado: acesso apenas de leitura às provas públicas.</string>
+    <string name="guest_notice_title">Funcionalidade reservada a utilizadores registados</string>
+    <string name="guest_notice_body">Crie uma conta para registar provas, publicar alertas, subscrever provas e atletas e adicionar amigos.</string>
+    <string name="field_visibility">Visibilidade</string>
+    <string name="visibility_public">Pública</string>
+    <string name="visibility_friends">Apenas amigos</string>
+    <string name="visibility_private">Privada</string>
+    <string name="visibility_public_description">Visível para todos os utilizadores da aplicação, incluindo convidados.</string>
+    <string name="visibility_friends_description">Visível apenas para si e para os utilizadores que tem como amigos.</string>
+    <string name="visibility_private_description">Visível apenas para si. Os alertas e as participações amadoras herdam esta restrição.</string>
+    <string name="field_athlete">Atleta reportado</string>
+    <string name="field_athlete_hint">Associar o atleta permite notificar com exatidão quem o segue.</string>
+    <string name="athlete_not_linked">Sem associação</string>
+    <string name="setting_only_friends_title">Apenas amigos</string>
+    <string name="setting_only_friends_description">Restringe todas as notificações da comunidade à atividade publicada pelos seus amigos.</string>
+    <string name="setting_friend_activity_title">Atividade dos amigos</string>
+    <string name="setting_friend_activity_description">Ser notificado quando um amigo regista uma prova ou publica uma nova participação.</string>
+    <string name="setting_athlete_positions_title">Posições dos atletas</string>
+    <string name="setting_athlete_positions_description">Ser notificado quando um atleta que segue é avistado num percurso.</string>
+    <string name="notification_friend_race">%1$s registou uma nova prova</string>
+    <string name="notification_friend_race_body">Consulte os detalhes de %1$s.</string>
+    <string name="section_system_state">Estado do dispositivo</string>
+    <string name="section_sensors">Sensores</string>
+    <string name="system_state_intro">Condições que a aplicação vigia para adaptar a forma como recolhe dados.</string>
+    <string name="system_battery">Bateria</string>
+    <string name="system_thermal">Térmico</string>
+    <string name="system_profile">Perfil</string>
+    <string name="system_profile_high">Alto</string>
+    <string name="system_profile_balanced">Equilibrado</string>
+    <string name="system_profile_low">Mínimo</string>
+    <string name="system_thermal_none">Normal</string>
+    <string name="system_thermal_light">Ligeiro</string>
+    <string name="system_thermal_moderate">Moderado</string>
+    <string name="system_thermal_severe">Grave</string>
+    <string name="system_thermal_critical">Crítico</string>
+    <string name="system_yes">Sim</string>
+    <string name="system_no">Não</string>
+    <string name="system_charging">A carregar</string>
+    <string name="system_charging_usage">Com o dispositivo a carregar, a precisão máxima é mantida mesmo com bateria baixa.</string>
+    <string name="system_power_save">Poupança de energia</string>
+    <string name="system_power_save_usage">Alarga o intervalo de localização e abdica do GPS de alta precisão.</string>
+    <string name="system_metered">Rede limitada</string>
+    <string name="system_metered_usage">O envio de fotografias é adiado numa ligação limitada com bateria baixa.</string>
+    <string name="system_data_saver">Poupança de dados</string>
+    <string name="system_data_saver_usage">Com a poupança de dados ativa, as transferências pesadas aguardam por uma rede sem restrições.</string>
+    <string name="system_background_restricted">Segundo plano restrito</string>
+    <string name="system_background_restricted_usage">Se estiver restrito, as notificações podem não chegar com a aplicação encerrada.</string>
+    <string name="system_battery_optimizations">Otimizações de bateria</string>
+    <string name="system_battery_optimizations_usage">O Android pode atrasar as verificações periódicas enquanto as otimizações se aplicarem.</string>
+</resources>

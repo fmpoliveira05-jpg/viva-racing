@@ -1,0 +1,132 @@
+rules_version = '2';
+
+// ---------------------------------------------------------------------------
+// Regras de seguranca do Cloud Firestore para a aplicacao Viva Racing.
+//
+// Distinguem tres niveis de acesso:
+//
+//  * PUBLICO   - provas, alertas e participacoes marcados como publicos, e o
+//                diretorio `publicProfiles`, legiveis por qualquer sessao
+//                autenticada, incluindo o modo convidado (sessao anonima);
+//  * AMIGOS    - conteudo cujo campo `visibleTo` contem o marcador
+//                `f:<autor>`, acessivel apenas a quem consta da subcolecao de
+//                amigos do autor;
+//  * PRIVADO   - perfil, subscricoes, amizades e pedidos de amizade, sempre
+//                restritos ao proprio utilizador.
+//
+// O convidado e uma sessao anonima: le conteudo publico, mas nao escreve nada.
+// ---------------------------------------------------------------------------
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --------------------------- funcoes auxiliares ---------------------------
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Utilizador com conta propria: exclui as sessoes anonimas (convidados).
+    function isRegistered() {
+      return isSignedIn()
+        && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isFriendOf(authorId) {
+      return exists(
+        /databases/$(database)/documents/users/$(authorId)/friends/$(request.auth.uid)
+      );
+    }
+
+    // Um documento e legivel se for publico, se pertencer ao proprio, ou se
+    // estiver restrito a amigos e o leitor constar da lista de amigos do autor.
+    function canRead(authorId) {
+      return isSignedIn() && (
+        'public' in resource.data.visibleTo
+        || ('u:' + request.auth.uid) in resource.data.visibleTo
+        || authorId == request.auth.uid
+        || (
+          ('f:' + authorId) in resource.data.visibleTo
+          && isFriendOf(authorId)
+        )
+      );
+    }
+
+    // ----------------------------- conteudo -----------------------------
+
+    match /races/{raceId} {
+      allow read: if canRead(resource.data.authorId);
+      allow create: if isRegistered()
+        && request.resource.data.authorId == request.auth.uid;
+      allow update, delete: if isRegistered()
+        && resource.data.authorId == request.auth.uid;
+    }
+
+    match /alerts/{alertId} {
+      allow read: if canRead(resource.data.authorId);
+      allow create: if isRegistered()
+        && request.resource.data.authorId == request.auth.uid;
+      allow update, delete: if isRegistered()
+        && resource.data.authorId == request.auth.uid;
+    }
+
+    match /amateurRuns/{runId} {
+      allow read: if canRead(resource.data.userId);
+      allow create: if isRegistered()
+        && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isRegistered()
+        && resource.data.userId == request.auth.uid;
+    }
+
+    // ------------------- diretorio publico de utilizadores ------------------
+    // Contem apenas nome e localidade: e o que torna possivel pesquisar
+    // pessoas para enviar um pedido de amizade sem expor dados pessoais.
+
+    match /publicProfiles/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isRegistered() && request.auth.uid == userId;
+    }
+
+    // ------------------------- informacao privada ---------------------------
+
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+
+      match /subscriptions/{raceId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      match /athleteSubscriptions/{athleteId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // A amizade e simetrica: quem aceita o pedido escreve tambem no registo
+      // da outra pessoa, pelo que a escrita e permitida ao proprio e ao
+      // utilizador identificado pelo documento.
+      match /friends/{friendId} {
+        allow read: if isOwner(userId);
+        allow write: if isOwner(userId) || request.auth.uid == friendId;
+      }
+
+      // Caixa de entrada: o remetente cria o documento, o destinatario le-o e
+      // qualquer um dos dois o pode eliminar (ao aceitar, recusar ou cancelar).
+      match /friendRequests/{fromId} {
+        allow read: if isOwner(userId);
+        allow create: if isRegistered()
+          && request.auth.uid == fromId
+          && fromId != userId;
+        allow delete: if isOwner(userId) || request.auth.uid == fromId;
+      }
+
+      // Espelho dos pedidos enviados, que permite ao remetente consultar e
+      // cancelar aquilo que enviou.
+      match /sentRequests/{toId} {
+        allow read: if isOwner(userId);
+        allow write: if isOwner(userId) || request.auth.uid == toId;
+      }
+    }
+  }
+}

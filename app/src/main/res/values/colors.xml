@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="viva_orange">#FFB4380B</color>
+    <color name="viva_orange_light">#FFFFDBCF</color>
+    <color name="viva_blue">#FF00629D</color>
+    <color name="viva_green">#FF2E7D32</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#FF1B1B1B</color>
+</resources>
