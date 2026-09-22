@@ -13,6 +13,13 @@ Trabalho prático da unidade curricular de **Computação Móvel e Ubíqua** (É
 | **IDE** | Android Studio |
 | **minSdk / targetSdk** | 26 / 35 |
 
+<p align="center">
+  <img src="docs/screenshots/nova-prova.png" alt="Criação de uma prova com mapa, meteorologia e percurso importado" width="260">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/pesquisa-local.png" alt="Pesquisa do local de partida" width="260">
+</p>
+<p align="center"><em>Criar uma prova: local de partida (pesquisa ou GPS), meteorologia do local e percurso gravado em direto ou importado de um KML.</em></p>
+
 ---
 
 ## 1. Contexto e tema
