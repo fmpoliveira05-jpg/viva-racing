@@ -1,7 +1,9 @@
 # Viva Racing
 
 Aplicação Android para acompanhamento colaborativo de maratonas, corridas e provas de ciclismo.
-Trabalho prático da unidade curricular de **Computação Móvel e Ubíqua** (Época Especial), Licenciatura em Engenharia Informática, ESTG, Universidade Técnica do Porto, ano letivo 2025/2026.
+Trabalho prático da unidade curricular de **Computação Móvel e Ubíqua** (Época Especial), Licenciatura em Engenharia Informática, ESTG – Politécnico do Porto, ano letivo 2025/2026.
+
+[![CI](https://github.com/fmpoliveira05-jpg/viva-racing/actions/workflows/ci.yml/badge.svg)](https://github.com/fmpoliveira05-jpg/viva-racing/actions/workflows/ci.yml)
 
 | | |
 |---|---|
@@ -161,6 +163,8 @@ O ficheiro `app/build.gradle.kts` lê estes valores e injeta-os no `AndroidManif
 
 O projeto inclui o *wrapper* do Gradle 8.9, pelo que não é preciso instalar o Gradle à parte.
 
+Sem `local.properties` e sem chaves o projeto compila na mesma (são usados valores de substituição), mas os mapas, a meteorologia e o envio de fotografias não funcionam. O `google-services.json` é sempre necessário para compilar; o GitHub Actions usa um ficheiro fictício apenas para verificar a compilação e correr os testes unitários.
+
 ```bash
 ./gradlew assembleDebug     # gerar o APK de depuração
 ./gradlew test              # testes unitários
@@ -171,8 +175,8 @@ O projeto inclui o *wrapper* do Gradle 8.9, pelo que não é preciso instalar o 
 
 ## 6. Testes
 
-- **Unitários** (`app/src/test`), com `GeoUtilsTest` valida o cálculo de distâncias (Haversine), o comprimento de percursos e a regra de proximidade ao trajeto; `FormattersTest` valida a formatação de durações, distâncias e ritmo.
-- **Instrumentados** (`app/src/androidTest`), com `RaceDaoTest` valida a persistência do percurso em JSON, a operação de *upsert*, a marcação de sincronização e a consulta que cruza provas com subscrições.
+- **Unitários** (`app/src/test`): `GeoUtilsTest` valida o cálculo de distâncias (Haversine), o comprimento de percursos e a regra de proximidade ao trajeto; `FormattersTest` valida a formatação de durações, distâncias e ritmo; `KmlParserTest` valida a leitura das coordenadas dos ficheiros KML (ordem longitude/latitude, altitude opcional e entradas inválidas).
+- **Instrumentados** (`app/src/androidTest`): `RaceDaoTest` valida a persistência do percurso em JSON, a operação de *upsert*, a marcação de sincronização e a consulta que cruza provas com subscrições.
 
 ---
 

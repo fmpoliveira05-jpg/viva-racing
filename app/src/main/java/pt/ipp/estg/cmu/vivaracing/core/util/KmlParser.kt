@@ -54,9 +54,10 @@ object KmlParser {
 
     /**
      * O bloco `<coordinates>` de um KML contém triplos separados por espaços,
-     * com a ordem longitude,latitude[,altitude].
+     * com a ordem longitude,latitude[,altitude]. É `internal` para poder ser
+     * testado sem o XmlPullParser da plataforma.
      */
-    private fun parseCoordinates(raw: String): List<GeoPoint> =
+    internal fun parseCoordinates(raw: String): List<GeoPoint> =
         raw.split(Regex("\\s+"))
             .asSequence()
             .map { it.trim() }

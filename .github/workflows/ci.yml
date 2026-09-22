@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # O google-services.json verdadeiro não é versionado. Este ficheiro fictício só serve
+      # para o plugin do Firebase deixar compilar; a aplicação gerada não se liga a nada.
+      - name: Criar google-services.json fictício
+        run: |
+          cat > app/google-services.json <<'JSON'
+          {
+            "project_info": {
+              "project_number": "000000000000",
+              "project_id": "viva-racing-ci",
+              "storage_bucket": "viva-racing-ci.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
+                  "android_client_info": { "package_name": "pt.ipp.estg.cmu.vivaracing" }
+                },
+                "oauth_client": [],
+                "api_key": [{ "current_key": "fake-api-key-for-ci-only" }],
+                "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+              }
+            ],
+            "configuration_version": "1"
+          }
+          JSON
+
+      - name: Testes unitários e compilação
+        run: ./gradlew testDebugUnitTest assembleDebug --stacktrace
